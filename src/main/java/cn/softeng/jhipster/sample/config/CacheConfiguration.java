@@ -74,6 +74,18 @@ public class CacheConfiguration {
             createCache(cm, cn.softeng.jhipster.sample.repository.UserRepository.USERS_BY_LOGIN_CACHE, jcacheConfiguration);
             createCache(cm, cn.softeng.jhipster.sample.repository.UserRepository.USERS_BY_EMAIL_CACHE, jcacheConfiguration);
             createCache(cm, cn.softeng.jhipster.sample.domain.Authority.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Region.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Country.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Location.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Department.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Task.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Employee.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Job.class.getName(), jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            createCache(cm, cn.softeng.jhipster.sample.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
