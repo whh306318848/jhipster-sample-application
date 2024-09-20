@@ -1,0 +1,5 @@
+org.springframework.test.context.ContextCustomizerFactory = cn.softeng.jhipster.\
+    sample.config.SqlTestContainersSpringContextCustomizerFactory,cn.softeng.\
+    jhipster.sample.config.TestContainersSpringContextCustomizerFactory,cn.\
+    softeng.jhipster.sample.config.\
+    RedisTestContainersSpringContextCustomizerFactory
